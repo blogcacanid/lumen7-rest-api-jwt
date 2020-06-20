@@ -18,6 +18,8 @@ cd lumen7-rest-api-jwt
 - composer install
 - cp .env.example .env
 - php artisan key:generate
+- php artisan jwt:secret
+- php artisan migrate
 
 ## Testing
 Jalankan Lumen 7 dengan menggunakan perintah berikut:
