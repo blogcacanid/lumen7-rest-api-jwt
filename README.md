@@ -36,7 +36,7 @@ Selanjutnya kita akan testing menggunakan Postman.
 
 #### Register
 Pertama-tama kita daftarkan user baru terlebih dahulu agar kita bisa melakukan login.
-Buka postman lalu pilih method POST kemudian ketikkkan URL http://localhost:8000/api/auth/register
+Buka postman lalu pilih method POST kemudian ketikkkan URL http://localhost:8000/api/register
 Kemudian pilih tab Body. Lalu pada radiobox pilih raw dan typenya pilih JSON. Selanjutnya pada bagian textbox inputkan data registrasinya seperti berikut:
 {
 "name": "Rony",
@@ -52,7 +52,7 @@ Selanjutnya klik tombol Send
 
 #### Login
 Setelah registrasi berhasil selanjutnya kita coba untuk login dengan user yang sudah kita registrasikan tersebut.
-Buka postman lalu pilih method POST kemudian ketikkkan URL http://localhost:8000/api/auth/login
+Buka postman lalu pilih method POST kemudian ketikkkan URL http://localhost:8000/api/login
 Kemudian pilih tab Body. Lalu pada radiobox pilih raw raw dan typenya pilih JSON. Selanjutnya pada bagian textbox inputkan data email dan password untuk login:
 {
 "email": "rony@rony.com",
@@ -67,7 +67,7 @@ Jika login berhasil, maka kita akan mendapatkan access token. Access Token terse
 ##### Profile
 Selanjutnya kita akan mencoba mengakses link Profile.
 Link profile ini hanya bisa diakses dengan menggunakan token.
-Buka postman lalu pilih method GET kemudian ketikkkan URL http://localhost:8000/api/auth/profile
+Buka postman lalu pilih method GET kemudian ketikkkan URL http://localhost:8000/api/profile
 Kemudian pilih tab Authorization. Lalu pada combo TYPE pilih Bearear Token. Selanjutnya pada textbox Token isi dengan data access token yang didapat pada saat login sebelumnya.
 Selanjutnya klik tombol Send
 ![004](https://user-images.githubusercontent.com/51890752/85202248-3c04be00-b32f-11ea-8bb6-b426373ac256.jpg)
